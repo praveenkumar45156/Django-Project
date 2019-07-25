@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+<!-- <h1>Hello {{name}} !!!!!!</h1> -->
+<!-- '{{' = It's mean zinza pattern and whatever the code we are writting inside the curly braces are dynamicS
+we can write the function or operation there -->
+
+{% block content %}
+    <form action='add' method="POST">
+        {% csrf_token %}
+        Num1: <input type="text" placeholder="Number1" name="num1"></br>
+        Num2: <input type="text" placeholder="Number2" name="num2"></br>
+                <input type="submit">
+    </form>
+{% endblock %}
